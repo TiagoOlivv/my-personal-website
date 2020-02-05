@@ -1,21 +1,28 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default () => {
+	return (
+		<Layout>
+			<h1>Tiago Oliveira</h1>
+			<h2>Front-end Developer</h2>
+			<section>
+				<h4>Hello, I'm Tiago de Moura Oliveira</h4>
+				<p>
+					Graduating in the Information Systems course at the Federal University
+					of Piaui - UFPI. Interest in developing web and mobile applications, I
+					participate in technology events always looking to increase my skills,
+					this helps me to stay fit to the market and be collaborative.
+				</p>
+				<p>
+					I develop my projects with JavaScript using ReactJS, React Native and
+					Node.
+				</p>
+			</section>
+			{`Check out mostly `}
+			<Link to="/projects">Projects</Link>
+		</Layout>
+	)
+}
