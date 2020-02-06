@@ -1,10 +1,12 @@
 import React from 'react'
 
 import Layout from '../components/layout'
+import Helmet from 'react-helmet'
 
 export default () => {
 	return (
 		<Layout>
+			<Helmet title="Projects | Tiago Oliveira" />
 			<h1>Projects</h1>
 			<hr />
 			<p>

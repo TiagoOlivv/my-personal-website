@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 
 export default () => {
 	return (
 		<Layout>
+			<Helmet title="Home | Tiago Oliveira" />
 			<h1>Tiago Oliveira</h1>
 			<h2>Front-end Developer</h2>
 			<section>
