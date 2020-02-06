@@ -1,12 +1,12 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import Helmet from 'react-helmet'
+import SEO from '../components/seo'
 
 export default () => {
 	return (
 		<Layout>
-			<Helmet title="Projects | Tiago Oliveira" />
+			<SEO pageTitle="Projects" />
 			<h1>Projects</h1>
 			<hr />
 			<p>
