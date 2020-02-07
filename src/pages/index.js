@@ -7,7 +7,10 @@ import SEO from '../components/seo'
 export default () => {
 	return (
 		<Layout>
-			<SEO />
+			<SEO
+				description="front-end developer, developing apps"
+				keywords="ReactJS, React Native, Node, Gatsby, Front-end, API"
+			/>
 			<h1>Tiago Oliveira</h1>
 			<h2>Front-end Developer</h2>
 			<section>

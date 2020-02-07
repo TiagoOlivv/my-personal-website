@@ -1,11 +1,12 @@
 module.exports = {
 	siteMetadata: {
 		title: `Tiago Oliveira`,
-		description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
 		author: `@tiagoolivv`,
+		siteUrl: 'https://my-personal-website.github.io/',
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
+		`gatsby-plugin-sitemap`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
