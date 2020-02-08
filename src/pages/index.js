@@ -9,8 +9,8 @@ import {
 	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 export default () => {
 	return (
