@@ -20,6 +20,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -30,7 +31,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+		"start": "npm run develop",
+		"lint": "eslint src/",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
