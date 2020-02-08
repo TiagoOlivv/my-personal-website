@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faInstagram,
@@ -11,6 +10,7 @@ import {
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import avatar from '../assets/images/avatar.jpg'
 
 export default () => {
 	return (
@@ -19,9 +19,12 @@ export default () => {
 				description="front-end developer, developing apps"
 				keywords="ReactJS, React Native, Node, Gatsby, Front-end, API"
 			/>
+			<figure className="photo image is-128x128">
+				<img className="is-rounded" src={avatar} alt="Tiago Oliveira" />
+			</figure>
 			<div className="has-text-centered">
-				<h1 className="title">Tiago Oliveira</h1>
-				<h2 className="subtitle">Front-end Developer</h2>
+				<h1 className="title has-text-centered">Tiago Oliveira</h1>
+				<h2 className="subtitle has-text-centered">Front-end Developer</h2>
 				<a href="https://instagram.com/tiagoolivv" aria-label="instagram">
 					<span className="icon is-large fa-2x">
 						<FontAwesomeIcon icon={faInstagram} />
