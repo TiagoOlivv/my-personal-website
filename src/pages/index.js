@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faInstagram,
@@ -10,7 +11,6 @@ import {
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import avatar from '../assets/images/avatar.jpg'
 
 export default () => {
 	return (
@@ -20,7 +20,26 @@ export default () => {
 				keywords="ReactJS, React Native, Node, Gatsby, Front-end, API"
 			/>
 			<figure className="photo image is-128x128">
-				<img className="is-rounded" src={avatar} alt="Tiago Oliveira" />
+				<StaticQuery
+					query={graphql`
+						query {
+							file(relativePath: { eq: "avatar.jpg" }) {
+								childImageSharp {
+									fixed(width: 128, height: 128) {
+										...GatsbyImageSharpFixed
+									}
+								}
+							}
+						}
+					`}
+					render={data => (
+						<Img
+							fixed={data.file.childImageSharp.fixed}
+							imgStyle={{ borderRadius: '100%' }}
+							alt="Tiago Oliveira"
+						/>
+					)}
+				/>
 			</figure>
 			<div className="has-text-centered">
 				<h1 className="title has-text-centered">Tiago Oliveira</h1>
