@@ -11,10 +11,10 @@ export default () => {
 				description="front-end developer, developing apps"
 				keywords="ReactJS, React Native, Node, Gatsby, Front-end, API"
 			/>
-			<h1>Tiago Oliveira</h1>
-			<h2>Front-end Developer</h2>
-			<section>
-				<h4>Hello, I'm Tiago de Moura Oliveira</h4>
+			<h1 className="title has-text-centered">Tiago Oliveira</h1>
+			<h2 className="subtitle has-text-centered">Front-end Developer</h2>
+			<section className="section content is-size-4-desktop is-size-5-touch">
+				<h4 className="title">Hello, I'm Tiago Oliveira</h4>
 				<p>
 					Graduating in the Information Systems course at the Federal University
 					of Piaui - UFPI. Interest in developing web and mobile applications, I
