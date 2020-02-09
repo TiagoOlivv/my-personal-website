@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Layout from 'components/Layout'
@@ -9,14 +9,7 @@ import Card from 'components/Card'
 
 export const queryImage = graphql`
 	query {
-		propject1: file(relativePath: { eq: "web.jpg" }) {
-			childImageSharp {
-				fixed(width: 96, height: 96) {
-					...GatsbyImageSharpFixed
-				}
-			}
-		}
-		propject2: file(relativePath: { eq: "avatar.jpg" }) {
+		post1: file(relativePath: { eq: "web.jpg" }) {
 			childImageSharp {
 				fixed(width: 96, height: 96) {
 					...GatsbyImageSharpFixed
@@ -26,7 +19,7 @@ export const queryImage = graphql`
 	}
 `
 
-const Projects = ({ data }) => {
+const Blog = ({ data }) => {
 	return (
 		<Layout>
 			<SEO
@@ -38,8 +31,8 @@ const Projects = ({ data }) => {
 				<h1 className="title has-text-centered">Projects</h1>
 				<hr />
 				<p className="has-text-centered">
-					{`Some of my projects, see more on my `}
-					<a href="https://github.com/tiagoolivv">Github</a>.
+					{`See more of my posts on `}
+					<a href="https://www.linkedin.com/in/tiagoolivv/">LinkedIn</a>.
 				</p>
 
 				<div className="columns is-centered">
@@ -51,36 +44,20 @@ const Projects = ({ data }) => {
 							tags={['Gatsby', 'React']}
 							image={
 								<Img
-									fixed={data.propject1.childImageSharp.fixed}
-									alt="Title Project"
-								/>
-							}
-						/>
-						<Card
-							title="Title Project"
-							subtitle="Subtitle Project"
-							link="https://www.google.com"
-							tags={['Gatsby', 'React']}
-							image={
-								<Img
-									fixed={data.propject2.childImageSharp.fixed}
+									fixed={data.post1.childImageSharp.fixed}
 									alt="Title Project"
 								/>
 							}
 						/>
 					</div>
 				</div>
-				<p className="has-text-centered">
-					{`Check out mostly `}
-					<Link to="/blog">Blog</Link>
-				</p>
 			</section>
 		</Layout>
 	)
 }
 
-Projects.propTypes = {
+Blog.propTypes = {
 	data: PropTypes.object.isRequired,
 }
 
-export default Projects
+export default Blog

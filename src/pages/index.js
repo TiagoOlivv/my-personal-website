@@ -77,9 +77,11 @@ export default () => {
 					I develop my projects with JavaScript using ReactJS, React Native and
 					Node.
 				</p>
+				<p>
+					{`Check out mostly `}
+					<Link to="/projects">Projects</Link>
+				</p>
 			</section>
-			{`Check out mostly `}
-			<Link to="/projects">Projects</Link>
 		</Layout>
 	)
 }
