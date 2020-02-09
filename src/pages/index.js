@@ -78,7 +78,7 @@ export default () => {
 					Node.
 				</p>
 				<p>
-					{`Check out mostly `}
+					{`See more at `}
 					<Link to="/projects">Projects</Link>
 				</p>
 			</section>

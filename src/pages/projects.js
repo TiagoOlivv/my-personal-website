@@ -16,13 +16,6 @@ export const queryImage = graphql`
 				}
 			}
 		}
-		propject2: file(relativePath: { eq: "avatar.jpg" }) {
-			childImageSharp {
-				fixed(width: 96, height: 96) {
-					...GatsbyImageSharpFixed
-				}
-			}
-		}
 	}
 `
 
@@ -52,18 +45,6 @@ const Projects = ({ data }) => {
 							image={
 								<Img
 									fixed={data.propject1.childImageSharp.fixed}
-									alt="Title Project"
-								/>
-							}
-						/>
-						<Card
-							title="Title Project"
-							subtitle="Subtitle Project"
-							link="https://www.google.com"
-							tags={['Gatsby', 'React']}
-							image={
-								<Img
-									fixed={data.propject2.childImageSharp.fixed}
 									alt="Title Project"
 								/>
 							}

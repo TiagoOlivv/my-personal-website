@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Layout from 'components/Layout'
@@ -28,7 +28,7 @@ const Blog = ({ data }) => {
 				keywords="ReactJS, React Native, Node, Gatsby, Front-end, API"
 			/>
 			<section className="section is-size-4-desktop is-size-5-touch">
-				<h1 className="title has-text-centered">Projects</h1>
+				<h1 className="title has-text-centered">Blog</h1>
 				<hr />
 				<p className="has-text-centered">
 					{`See more of my posts on `}
@@ -51,6 +51,10 @@ const Blog = ({ data }) => {
 						/>
 					</div>
 				</div>
+				<p>
+					{`See more at `}
+					<Link to="/stack">Stack</Link>
+				</p>
 			</section>
 		</Layout>
 	)
