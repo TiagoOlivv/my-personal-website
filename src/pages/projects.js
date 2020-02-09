@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
-import Card from '../components/Card'
+import Layout from 'components/Layout'
+import SEO from 'components/SEO'
+import Card from 'components/Card'
 
 export const queryImage = graphql`
 	query {
@@ -35,7 +35,6 @@ const Projects = ({ data }) => {
 				keywords="ReactJS, React Native, Node, Gatsby, Front-end, API"
 			/>
 			<section className="section is-size-4-desktop is-size-5-touch">
-				<Link to="/">Voltar</Link>
 				<h1 className="title has-text-centered">Projects</h1>
 				<hr />
 				<p className="has-text-centered">
