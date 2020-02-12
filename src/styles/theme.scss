@@ -16,3 +16,22 @@ $editor-property: #ce9178;
 $editor-regex: #d16969;
 $editor-regex-quantifier: #d7ba7d;
 $editor-constant: #569cd6;
+
+$body-background-color: $editor-background;
+$text: $editor-foreground;
+$link: $editor-activity-bar-badge;
+$link-hover: $editor-constant;
+$white-ter: $text;
+$yellow: $editor-property;
+
+$navbar-background-color: $editor-menu-background;
+$navbar-item-color: $editor-foreground;
+$navbar-item-hover-color: $editor-foreground;
+$navbar-item-hover-background-color: $editor-unselected-tab;
+$navbar-burger-color: $navbar-item-color;
+
+$card-background-color: $editor-unselected-tab;
+$card-hover-color: rgba($editor-foreground, 0.15);
+$tag-color: $editor-foreground;
+$tag-background-color: $editor-menu-background;
+$tag-radius: 0;

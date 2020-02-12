@@ -6,6 +6,7 @@ import Img from 'gatsby-image'
 import Layout from 'components/Layout'
 import SEO from 'components/SEO'
 import Card from 'components/Card'
+import Title from 'components/Title'
 
 export const queryImage = graphql`
 	query {
@@ -23,13 +24,12 @@ const Blog = ({ data }) => {
 	return (
 		<Layout>
 			<SEO
-				pageTitle="Projects"
+				pageTitle="Blog"
 				description="front-end developer, developing apps"
 				keywords="ReactJS, React Native, Node, Gatsby, Front-end, API"
 			/>
 			<section className="section is-size-4-desktop is-size-5-touch">
-				<h1 className="title has-text-centered">Blog</h1>
-				<hr />
+				<Title>Blog</Title>
 				<p className="has-text-centered">
 					{`See more of my posts on `}
 					<a href="https://www.linkedin.com/in/tiagoolivv/">LinkedIn</a>.

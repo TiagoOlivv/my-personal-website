@@ -3,12 +3,13 @@ import Helmet from 'react-helmet'
 
 import Layout from 'components/Layout'
 import SEO from 'components/SEO'
+import Title from 'components/Title'
 
 const Stack = () => {
 	return (
 		<Layout>
 			<SEO
-				pageTitle="Projects"
+				pageTitle="Stack"
 				description="front-end developer, developing apps"
 				keywords="ReactJS, React Native, Node, Gatsby, Front-end, API"
 			/>
@@ -21,8 +22,7 @@ const Stack = () => {
 			</Helmet>
 
 			<section className="section is-size-4-desktop is-size-5-touch">
-				<h1 className="title has-text-centered">Stack</h1>
-				<hr />
+				<Title>Stack</Title>
 
 				<div className="container has-text-centered">
 					<p className="content">
