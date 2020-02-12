@@ -2,7 +2,7 @@ module.exports = {
 	siteMetadata: {
 		title: `Tiago Oliveira`,
 		author: `@tiagoolivv`,
-		siteUrl: 'https://my-personal-website.github.io/',
+		siteUrl: 'https://tiagoolivv.github.io/',
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
@@ -21,6 +21,14 @@ module.exports = {
 			resolve: `gatsby-plugin-manifest`,
 			options: {
 				icon: 'src/assets/images/favicon.png',
+			},
+		},
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: process.env.TRACKING_ID,
+				anonymize: true,
+				respectDNT: true,
 			},
 		},
 	],
