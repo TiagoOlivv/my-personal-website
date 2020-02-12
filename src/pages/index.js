@@ -66,7 +66,7 @@ export default () => {
 				</a>
 			</div>
 			<section className="section content is-size-4-desktop is-size-5-touch">
-				<h4 className="title">Hello, I'm Tiago Oliveira</h4>
+				<h4 className="title">Hello, I'm Tiago de Moura Oliveira</h4>
 				<p>
 					Graduating in the Information Systems course at the Federal University
 					of Piaui - UFPI. Interest in developing web and mobile applications, I
@@ -78,8 +78,8 @@ export default () => {
 					Node.
 				</p>
 				<p>
-					{`See more at `}
-					<Link to="/projects">Projects</Link>
+					{`See more at my `}
+					<Link to="/blog">Blog</Link>
 				</p>
 			</section>
 		</Layout>

@@ -52,8 +52,8 @@ const Projects = ({ data }) => {
 					</div>
 				</div>
 				<p className="has-text-centered">
-					{`Check out mostly `}
-					<Link to="/blog">Blog</Link>
+					{`Check out `}
+					<Link to="/stack">Stack</Link>
 				</p>
 			</section>
 		</Layout>

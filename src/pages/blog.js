@@ -51,9 +51,9 @@ const Blog = ({ data }) => {
 						/>
 					</div>
 				</div>
-				<p>
-					{`See more at `}
-					<Link to="/stack">Stack</Link>
+				<p className="has-text-centered">
+					{`Go to `}
+					<Link to="/projects">Projects</Link>
 				</p>
 			</section>
 		</Layout>
