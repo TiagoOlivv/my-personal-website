@@ -8,6 +8,8 @@ module.exports = {
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-sitemap`,
 		`gatsby-plugin-sass`,
+		`gatsby-transformer-sharp`,
+		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -15,7 +17,11 @@ module.exports = {
 				path: `${__dirname}/src/assets/images`,
 			},
 		},
-		`gatsby-transformer-sharp`,
-		`gatsby-plugin-sharp`,
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				icon: 'src/assets/images/favicon.png',
+			},
+		},
 	],
 }

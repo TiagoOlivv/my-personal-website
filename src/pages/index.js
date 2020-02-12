@@ -45,25 +45,31 @@ export default () => {
 				<h1 className="title has-text-centered has-text-light">
 					Tiago Oliveira
 				</h1>
-				<h2 className="subtitle has-text-centered">Front-end Developer</h2>
-				<a href="https://instagram.com/tiagoolivv" aria-label="instagram">
+				<h2 className="subtitle has-text-centered has-text-warning">
+					Front-end Developer
+				</h2>
+
+				<a href="https://www.linkedin.com/in/tiagoolivv" aria-label="linkedin">
 					<span className="icon is-large fa-2x">
-						<FontAwesomeIcon icon={faInstagram} />
+						<FontAwesomeIcon icon={faLinkedin} />
 					</span>
 				</a>
+
 				<a href="https://github.com/tiagoolivv" aria-label="github">
 					<span className="icon is-large fa-2x">
 						<FontAwesomeIcon icon={faGithub} />
 					</span>
 				</a>
+
 				<a href="https://t.me/tiagoolivv" aria-label="telegram">
 					<span className="icon is-large fa-2x">
 						<FontAwesomeIcon icon={faTelegram} />
 					</span>
 				</a>
-				<a href="https://www.linkedin.com/in/tiagoolivv" aria-label="linkedin">
+
+				<a href="https://instagram.com/tiagoolivv" aria-label="instagram">
 					<span className="icon is-large fa-2x">
-						<FontAwesomeIcon icon={faLinkedin} />
+						<FontAwesomeIcon icon={faInstagram} />
 					</span>
 				</a>
 			</div>

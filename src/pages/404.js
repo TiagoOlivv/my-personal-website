@@ -11,6 +11,9 @@ const NotFoundPage = () => (
 			<Title>404: NOT FOUND</Title>
 			<p className="has-text-centered">
 				You just hit a route that doesn't exist... the sadness.
+				<span role="img" aria-label="confused">
+					😕
+				</span>
 			</p>
 		</section>
 	</Layout>
