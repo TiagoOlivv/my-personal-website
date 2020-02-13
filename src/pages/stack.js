@@ -36,7 +36,7 @@ const Stack = () => {
 							<a
 								frameborder="0"
 								data-theme="light"
-								data-layers="2,4,1,3"
+								data-layers="1,2,3,4"
 								data-stack-embed="true"
 								href="https://embed.stackshare.io/stacks/embed/55aad5ab7f0930560cd19cc0df7424"
 							>

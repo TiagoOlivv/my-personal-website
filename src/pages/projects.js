@@ -10,7 +10,28 @@ import Title from 'components/Title'
 
 export const queryImage = graphql`
 	query {
-		propject1: file(relativePath: { eq: "web.jpg" }) {
+		project1: file(relativePath: { eq: "web.jpg" }) {
+			childImageSharp {
+				fixed(width: 96, height: 96) {
+					...GatsbyImageSharpFixed
+				}
+			}
+		}
+		project2: file(relativePath: { eq: "p2p.png" }) {
+			childImageSharp {
+				fixed(width: 96, height: 96) {
+					...GatsbyImageSharpFixed
+				}
+			}
+		}
+		project3: file(relativePath: { eq: "word.jpg" }) {
+			childImageSharp {
+				fixed(width: 96, height: 96) {
+					...GatsbyImageSharpFixed
+				}
+			}
+		}
+		project4: file(relativePath: { eq: "temp.jpg" }) {
 			childImageSharp {
 				fixed(width: 96, height: 96) {
 					...GatsbyImageSharpFixed
@@ -39,14 +60,50 @@ const Projects = ({ data }) => {
 				<div className="columns is-centered">
 					<div className="column is-half">
 						<Card
-							title="Title Project"
-							subtitle="Subtitle Project"
-							link="https://www.google.com"
-							tags={['Gatsby', 'React']}
+							title="TOUR - where will we go?"
+							subtitle="10th week omnistack"
+							link="https://github.com/TiagoOlivv/TOUR-where-will-we-go-WEB"
+							tags={['NodeJS', 'ReactJS', 'React Native']}
 							image={
 								<Img
-									fixed={data.propject1.childImageSharp.fixed}
-									alt="Title Project"
+									fixed={data.project1.childImageSharp.fixed}
+									alt="TOUR - where will we go?"
+								/>
+							}
+						/>
+						<Card
+							title="Prototype Network P2P"
+							subtitle="Download and Upload files"
+							link="https://github.com/TiagoOlivv/prototype-network-p2p"
+							tags={['Python']}
+							image={
+								<Img
+									fixed={data.project2.childImageSharp.fixed}
+									alt="Prototype Network P2P"
+								/>
+							}
+						/>
+						<Card
+							title="REST in SD with middleware"
+							subtitle="Word processing software"
+							link="https://github.com/TiagoOlivv/middleware-with-communication-rest"
+							tags={['Python', 'Java']}
+							image={
+								<Img
+									fixed={data.project3.childImageSharp.fixed}
+									alt="REST in SD with middleware"
+								/>
+							}
+						/>
+						<Card
+							title="Ambient temperature with dht11"
+							subtitle="Raspberry pub and android sub"
+							link="https://github.com/TiagoOlivv/ambient-temperature-with-dht11-broker-and-Android-APP"
+							tags={['Python', 'Java']}
+							image={
+								<Img
+									fixed={data.project4.childImageSharp.fixed}
+									alt="Ambient temperature with dht11"
 								/>
 							}
 						/>

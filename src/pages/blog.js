@@ -38,14 +38,14 @@ const Blog = ({ data }) => {
 				<div className="columns is-centered">
 					<div className="column is-half">
 						<Card
-							title="Title Project"
-							subtitle="Subtitle Project"
-							link="https://www.google.com"
-							tags={['Gatsby', 'React']}
+							title="TOUR - where will we go?"
+							subtitle="Application developed with the aid of Rocketseat in the 10th week omnistack"
+							link="https://www.linkedin.com/posts/tiagoolivv_rocketseat-javascript-reactnative-activity-6624455315284865024--YY5"
+							tags={['NodeJS', 'ReactJS', 'React Native']}
 							image={
 								<Img
 									fixed={data.post1.childImageSharp.fixed}
-									alt="Title Project"
+									alt="TOUR - Onde Comer?"
 								/>
 							}
 						/>
